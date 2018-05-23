@@ -8,11 +8,11 @@ Bolsas de valores no mundo, Paris, São Paulo, Nova York e Tókio;
 Bitcoin, BitStamp, BlockChain, CoinBase, Foxbit e seus valores;
 Cotações: Dolar, Peso Argentino, BitCoin, Euro, Libra Esterlina;
 
-##About
+## About
 
 Dados sobre o desenvolvedor.
 
-##API
+## API
 
 "https://api.hgbrasil.com/finance"
 
@@ -22,14 +22,14 @@ Dados sobre o desenvolvedor.
 
 Clonar o projeto
 
-##Passo 2:
+## Passo 2:
 
 Navegar até a pasta raíz e abrir o `cmd` em modo administrador
 
-##Passo 3:
+## Passo 3:
 
 Digitar `npm install`
 
-##Passo 4
+## Passo 4
 
 Digitar `ionic serve` para abrir no navegador.
