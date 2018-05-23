@@ -2,7 +2,7 @@
 
 Aplicativo simples utilizando Ionic 3 e Angular 5.
 
-##Dados que o aplicativo carrega:
+## Dados que o aplicativo carrega:
 
 Bolsas de valores no mundo, Paris, São Paulo, Nova York e Tókio;
 Bitcoin, BitStamp, BlockChain, CoinBase, Foxbit e seus valores;
@@ -18,7 +18,7 @@ Dados sobre o desenvolvedor.
 
 ## Executando o projeto
 
-##Passo 1:
+## Passo 1:
 
 Clonar o projeto
 
