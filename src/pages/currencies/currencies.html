@@ -1,0 +1,54 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>Cotações</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content class="home">
+
+    <ion-list inset  [class.showList]="isActive">
+
+      <ion-item ion-item><strong>Nome: </strong><span>{{this.USD.name}}</span></ion-item>
+      <ion-item ion-item><strong>Compra: </strong><span color-secondary>{{this.USD.buy | currency: 'USD'}}</span></ion-item>
+      <ion-item ion-item><strong>Venda: </strong><span>{{this.USD.sell | currency: 'USD'}}</span></ion-item>
+      <ion-item ion-item><strong>Variação: </strong><span>{{this.USD.variation | percent: '2.2-5'}}</span></ion-item>
+
+    </ion-list>
+  
+    <ion-list inset [class.showList]="isActive">
+  
+      <ion-item ion-item><strong>Nome: </strong><span>Peso Argentino</span></ion-item>
+      <ion-item ion-item><strong>Compra: </strong><span color-secondary>{{this.ARS.buy | currency: 'ARS'}}</span></ion-item>
+      <ion-item ion-item><strong>Venda: </strong><span>{{this.ARS.sell | currency: 'ARS'}}</span></ion-item>
+      <ion-item ion-item><strong>Variação: </strong><span>{{this.ARS.variation | percent: '2.2-5'}}</span></ion-item>
+
+    </ion-list>
+
+    <ion-list inset [class.showList]="isActive">
+  
+      <ion-item ion-item><strong>Nome: </strong><span>{{this.BTC.name}}</span></ion-item>
+      <ion-item ion-item><strong>Compra: </strong><span color-secondary>{{this.BTC.buy | currency:'B'}}</span></ion-item>
+      <ion-item ion-item><strong>Venda: </strong><span>{{this.BTC.sell | currency: 'B'}}</span></ion-item>
+      <ion-item ion-item><strong>Variação: </strong><span>{{this.BTC.variation | percent: '2.2-5'}}</span></ion-item>
+
+    </ion-list>
+
+    <ion-list inset  [class.showList]="isActive">
+  
+      <ion-item ion-item><strong>Nome: </strong><span>{{this.EUR.name}}</span></ion-item>
+      <ion-item ion-item><strong>Compra: </strong><span color-secondary>{{this.EUR.buy | currency: 'EUR'}}</span></ion-item>
+      <ion-item ion-item><strong>Venda: </strong><span>{{this.EUR.sell | currency: 'EUR'}}</span></ion-item>
+      <ion-item ion-item><strong>Variação: </strong><span>{{this.EUR.variation | percent: '2.2-5'}}</span></ion-item>
+
+    </ion-list>
+
+    <ion-list inset [class.showList]="isActive">
+  
+      <ion-item ion-item><strong>Nome: </strong><span>Libra Esterlina</span></ion-item>
+      <ion-item ion-item><strong>Compra: </strong><span color-secondary>{{this.GBP.buy | currency:'GBP'}}</span></ion-item>
+      <ion-item ion-item><strong>Venda: </strong><span>{{this.GBP.sell | currency :'GBP'}}</span></ion-item>
+      <ion-item ion-item><strong>Variação: </strong><span>{{this.GBP.variation | percent: '2.2-5'}}</span></ion-item>
+
+    </ion-list>
+
+  </ion-content>

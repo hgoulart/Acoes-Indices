@@ -1,0 +1,59 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>Bitcoin</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content class="home">
+  
+    <ion-list inset  [class.showList]="isActive">
+  
+      <ion-item ion-item><strong>Nome: </strong><span>{{this.bitstamp.name}}</span></ion-item>
+      <ion-item ion-item><strong>Último valor: </strong><span color-secondary>{{this.bitstamp.last | currency}}</span></ion-item>
+      <ion-item ion-item><strong>Compra: </strong><span>{{this.bitstamp.buy | currency}}</span></ion-item>
+      <ion-item ion-item><strong>Venda: </strong><span>{{this.bitstamp.sell | currency}}</span></ion-item>
+      <ion-item ion-item><strong>Variação: </strong><span>{{this.bitstamp.variation | percent: '2.2-5'}}</span></ion-item>
+
+    </ion-list>
+
+    <ion-list inset  [class.showList]="isActive">
+  
+      <ion-item ion-item><strong>Nome: </strong><span>{{this.blockchain_info.name}}</span></ion-item>
+      <ion-item ion-item><strong>Último valor: </strong><span color-secondary>{{this.blockchain_info.last | currency}}</span></ion-item>
+      <ion-item ion-item><strong>Compra: </strong><span>{{this.blockchain_info.buy | currency}}</span></ion-item>
+      <ion-item ion-item><strong>Venda: </strong><span>{{this.blockchain_info.sell | currency}}</span></ion-item>
+      <ion-item ion-item><strong>Variação: </strong><span>{{this.blockchain_info.variation | percent: '2.2-5'}}</span></ion-item>
+
+    </ion-list>
+
+    <ion-list inset  [class.showList]="isActive">
+  
+      <ion-item ion-item><strong>Nome: </strong><span>{{this.coinbase.name}}</span></ion-item>
+      <ion-item ion-item><strong>Último valor: </strong><span color-secondary>{{this.coinbase.last | currency}}</span></ion-item>
+      <ion-item ion-item *ngIf="this.coinbase.buy"><strong>Compra: </strong><span>{{this.coinbase.buy | currency}}</span></ion-item>
+      <ion-item ion-item *ngIf="this.coinbase.sell"><strong>Venda: </strong><span>{{this.coinbase.sell | currency}}</span></ion-item>
+      <ion-item ion-item><strong>Variação: </strong><span>{{this.coinbase.variation | percent: '2.2-5'}}</span></ion-item>
+
+    </ion-list>
+
+    <ion-list inset [class.showList]="isActive">
+  
+      <ion-item ion-item><strong>Nome: </strong><span>{{this.foxbit.name}}</span></ion-item>
+      <ion-item ion-item><strong>Último valor: </strong><span color-secondary>{{this.foxbit.last | currency: 'R$'}}</span></ion-item>
+      <ion-item ion-item><strong>Compra: </strong><span>{{this.foxbit.buy | currency}}</span></ion-item>
+      <ion-item ion-item><strong>Venda: </strong><span>{{this.foxbit.sell | currency}}</span></ion-item>
+      <ion-item ion-item><strong>Variação: </strong><span>{{this.foxbit.variation | percent: '2.2-5'}}</span></ion-item>
+
+    </ion-list>
+
+    <ion-list inset [class.showList]="isActive">
+  
+      <ion-item ion-item><strong>Nome: </strong><span>{{this.mercadobitcoin.name}}</span></ion-item>
+      <ion-item ion-item><strong>Último valor: </strong><span color-secondary>{{this.mercadobitcoin.last | currency: 'R$'}}</span></ion-item>
+      <ion-item ion-item><strong>Compra: </strong><span>{{this.mercadobitcoin.buy | currency}}</span></ion-item>
+      <ion-item ion-item><strong>Venda: </strong><span>{{this.mercadobitcoin.sell | currency}}</span></ion-item>
+      <ion-item ion-item><strong>Variação: </strong><span>{{this.mercadobitcoin.variation | percent: '2.2-5'}}</span></ion-item>
+
+    </ion-list>
+
+  </ion-content>

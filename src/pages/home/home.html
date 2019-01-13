@@ -1,17 +1,40 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Bolsas no mundo</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content class="home">
+
+  <ion-list inset [class.showList]="isActive">
+
+    <ion-item ion-item><strong>Local: </strong><span>{{this.CAC.location}}</span></ion-item>
+    <ion-item ion-item><strong>Nome: </strong><span color-secondary>{{this.CAC.name}}</span></ion-item>
+    <ion-item ion-item><strong>Variação: </strong><span>{{this.CAC.variation}}</span></ion-item>
+
+  </ion-list>
+
+  <ion-list inset [class.showList]="isActive">
+
+    <ion-item ion-item><strong>Local: </strong><span>{{this.IBOVESPA.location}}</span></ion-item>
+    <ion-item ion-item><strong>Nome: </strong><span color-secondary>{{this.IBOVESPA.name}}</span></ion-item>
+    <ion-item ion-item><strong>Variação: </strong><span>{{this.IBOVESPA.variation}}</span></ion-item>
+
+  </ion-list>
+
+  <ion-list inset [class.showList]="isActive">
+    
+    <ion-item ion-item><strong>Local: </strong><span>{{this.NASDAQ.location}}</span></ion-item>
+    <ion-item ion-item><strong>Nome: </strong><span color-secondary>{{this.NASDAQ.name}}</span></ion-item>
+    <ion-item ion-item><strong>Variação: </strong><span>{{this.NASDAQ.variation}}</span></ion-item>
+
+  </ion-list>
+
+  <ion-list inset [class.showList]="isActive">
+  
+    <ion-item ion-item><strong>Local: </strong><span>{{this.NIKKEI.location}}</span></ion-item>
+    <ion-item ion-item><strong>Nome: </strong><span color-secondary>{{this.NIKKEI.name}}</span></ion-item>
+    <ion-item ion-item><strong>Variação: </strong><span>{{this.NIKKEI.variation}}</span></ion-item>
+
+  </ion-list>
 </ion-content>
