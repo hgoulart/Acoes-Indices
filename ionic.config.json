@@ -1,12 +1,13 @@
 {
   "name": "minuteManage",
-  "app_id": "",
-  "type": "ionic-angular",
-  "proxies":[{
-    "path":"/api",
-    "proxyUrl":"https://api.hgbrasil.com/finance"
-  }], 
   "integrations": {
     "cordova": {}
-  }
+  },
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "https://api.hgbrasil.com/finance"
+    }
+  ]
 }
